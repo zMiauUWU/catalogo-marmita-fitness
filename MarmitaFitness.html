@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário Mamita Fitness</title>
+    <title>Pedidos Mamita Fitness</title>
 </head>
 <body>
-    <h1 style="color:white">Formulário Mamita Fitness</h1>
-    <form>
+    <h1 style="color:white">Pedidos Mamita Fitness</h1>
+    <form action="Tabela.html">
         <label style="color: white;" for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
         
@@ -16,15 +16,67 @@
         
         <label style="color: white" for="idade">Idade:</label>
         <input type="number" id="idade" name="idade" min="18" required><br><br>
+
+
+        <label style="color: white" for="nome">Peso:</label>
+        <input type="number" id="peso" name="peso" required> <br><br>
+
+        <label style="color: white" for="Genero">Genero</label>
+        <select name="genero">
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        <option value="outro">Outro</option></select><br><br>
         
         <label style="color: white" for="objetivo">Objetivo:</label>
         <select id="objetivo" name="objetivo" required>
-            <option value="perda_peso">Perda de Peso</option>
-            <option value="ganho_massa">Ganho de Massa Muscular</option>
-            <option value="condicionamento">Condicionamento Físico</option>
-            <option value="saude">Saúde Geral</option>
+            <optgroup label="Perda de peso">
+                <option value="saude">Saúde Geral</option>
+            </optgroup>
+            <optgroup label="Condicionamento">
+                <option value="ganho_massa">Ganho de Massa Muscular</option>
+            </optgroup>
+            
         </select><br><br>
         
+        <table background="ideias-de-Marmita-Fitness.jpg" width="50%" bgcolor="black" cellspacing="9" cellpadding="9" style="color: white" border="5">
+        <tr>
+            <caption><b>Porções</b></caption>
+            <tr align="center"></tr>             
+            <th>Item</th>
+            <th>Descrição</th>
+            <th>Quantidade</th>
+        </tr>
+        <tr>
+            <td>Arroz</td>
+            <td>Arroz branco cozido</td>
+            <td>1 xícara</td>
+        </tr>
+        <tr>
+            <td>Feijão</td>
+            <td>Feijão preto cozido</td>
+            <td>1/2 xícara</td>
+        </tr>
+        <tr>
+            <td>Frango</td>
+            <td>Peito de frango grelhado</td>
+            <td>150g</td>
+        </tr>
+        <tr>
+            <td>Legumes</td>
+            <td>Legumes variados cozidos no vapor</td>
+            <td>1 xícara</td>
+        </tr>
+        <tr>
+            <td>Salada</td>
+            <td>Salada de alface, tomate e cenoura</td>
+            <td>1 porção</td>
+        </tr>
+        <tr>
+            <td>Extras</td>
+            <td>Farofa e molho especial</td>
+            <td>-</td>
+        </tr>
+    </table>  
         <label style="color: white" for="mensagem">Mensagem:</label><br>
         <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
         <BODY background="ideias-de-Marmita-Fitness.jpg"></BODY>
@@ -32,6 +84,3 @@
     </form>
 </body>
 </html>
-
-        
-
